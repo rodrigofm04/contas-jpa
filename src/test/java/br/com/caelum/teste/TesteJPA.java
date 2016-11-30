@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import br.com.caelum.financas.modelo.Conta;
+import br.com.caelum.financas.util.JPAUtil;
 
 public class TesteJPA {
 
@@ -16,13 +17,7 @@ public class TesteJPA {
 		conta.setAgencia("043");
 		conta.setNumero("54321");
 
-		/**
-		 * Usando MySQL
-		 */
-		EntityManagerFactory emf = Persistence
-				.createEntityManagerFactory("financas");
-
-		EntityManager em = emf.createEntityManager();
+		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
 
 		em.persist(conta);
