@@ -17,23 +17,10 @@ public class TesteJPA {
 		conta.setNumero("54321");
 
 		/**
-		 * Usando HSQLDB
-		 */
-
-		// EntityManagerFactory emf = Persistence
-		// 		.createEntityManagerFactory("contas-hsqldb");
-
-		/**
-		 * Usando PostgreSQL
-		 */
-		// EntityManagerFactory emf = Persistence
-		// 		.createEntityManagerFactory("contas-postgres");
-
-		/**
 		 * Usando MySQL
 		 */
 		EntityManagerFactory emf = Persistence
-				.createEntityManagerFactory("contas-mysql");
+				.createEntityManagerFactory("financas");
 
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
