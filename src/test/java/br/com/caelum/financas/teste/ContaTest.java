@@ -1,4 +1,4 @@
-package br.com.caelum.teste;
+package br.com.caelum.financas.teste;
 
 import static org.junit.Assert.*;
 

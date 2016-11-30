@@ -1,4 +1,4 @@
-package br.com.caelum.teste;
+package br.com.caelum.financas.teste;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -12,10 +12,10 @@ public class TesteJPA {
 	public static void main(String[] args) {
 
 		Conta conta = new Conta();
-		conta.setTitular("Maria dos Santos");
-		conta.setBanco("Caixa");
-		conta.setAgencia("043");
-		conta.setNumero("54321");
+		conta.setTitular("Amaro");
+		conta.setBanco("Santandes");
+		conta.setNumero("55552");
+		conta.setAgencia("330");
 
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
