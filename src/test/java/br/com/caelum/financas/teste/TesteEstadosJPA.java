@@ -15,7 +15,7 @@ public class TesteEstadosJPA {
 
 		// Testes do capitulo
 		Conta conta = manager.find(Conta.class, 179);
-		conta.setTitular("Pedro Ferreira");
+		conta.setTitular("Renato Ferreira");
 		System.out.println(conta.toString());
 
 		manager.getTransaction().commit();
